@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, sans-serif;
+    background-color: #f1f1f1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(img.jpg);
+
+}
+
+section{
+    position: relative;
+    max-width: 400px;
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    backdrop-filter: blur(55px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 3rem;
+}
+
+.selectionButton ion-icon {
+    font-size: 2rem;
+    font-weight: 400;
+    color: #333;
+}
+
+.selectionButton button {
+    margin: 5px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #f0f0f0;
+}
+.selectionButton button:last-child{
+    font-size: 2rem;
+}
+
+.selectionButton button:hover {
+    cursor: pointer;
+}
+
+.result input{
+    color: #333;
+}
+.heading{
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #fff;
+}
+.inputBox {
+    position: relative;
+    margin: 1rem 0;
+    max-width: 310px;
+    border-bottom: 2px solid #fff;
+}
+
+.inputBox label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    color: #fff;
+    font-size: 1rem;
+    pointer-events: none;
+    transition: all 0.5s ease-in-out;
+}
+
+.inputBox input:focus + label,
+.inputBox input:not(:placeholder-shown) + label {
+    opacity: 0;
+    transform: translateY(-20%);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.inputBox input {
+    width: 100%;
+    height: 60px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    padding: 0 35px 0 5px;
+    color: #fff;
+}
+
+.selectionButton label{
+    width: 40px;
+    height: 40px;
+    margin-right: 2rem;
+    background-color: transparent;
+    color: #fff;
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+.result_heading, #result_box{
+    margin-top: 1rem;
+    color: #fff
+}
+
+#result_box{
+    height: 30px;
+
+    border-radius: 5px;
+    font-size: 1.5rem;
+    color: #fff;
+    outline: none;
+    border: none;
+}
+#result_box:hover{
+    border: #fff;
+}
+#caculate{
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    font-weight: 700;
+    margin: 1rem 0 0 0;
+}
+#caculate:hover{
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+#notification_p{
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin: 1rem 0;
+}
+#notification {
+    color: red;
+    font-weight: bold;
+    font-size: 1rem;
+}
+

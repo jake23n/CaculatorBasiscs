@@ -1,0 +1,52 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <section>
+        <div class="caculator">
+            <h1 class="heading">Caculator</h1>
+
+            <div class="inputBox">
+                <input type="text" id="inputBox_number1" placeholder="">
+                <label for="number1">Number 1</label>
+            </div>
+            <div class="inputBox">
+                <input type="text" id="inputBox_number2" placeholder="">
+                <label for="">Number 2</label>
+            </div>
+    
+            <div class="selectionButton">
+                <label>
+                    <input name="caculate" type="radio" value="add">
+                    +
+                </label>
+                <label>
+                    <input name="caculate" type="radio" value="subtract">
+                    -
+                </label>
+                <label>
+                    <input name="caculate" type="radio" value="multiply">
+                    x
+                </label>
+                <label>
+                    <input name="caculate" type="radio" value="divide">
+                    ÷
+                </label>
+            </div> 
+            <button id="caculate" onclick="caculate()">Caculate</button>
+            <h1 class="result_heading">Result: <span id="result_box"></span></h1>
+            
+            <p id="notification_p">Notice: <span id="notification"></span></p>
+        </div>
+
+        
+
+    </section>
+
+    <script src="index.js"></script>
+</body>
+</html>
