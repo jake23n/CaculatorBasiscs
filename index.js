@@ -1,3 +1,14 @@
+
+function notice(){
+    const radioButtons = document.querySelectorAll('input[type="radio"]')
+
+    for(let radioButton of radioButtons){
+        if(radioButton.checked) {
+            document.getElementById('notification').innerHTML = 'Please press the calculate button'
+            break;
+        }
+    }
+}
 function caculate(){
     document.getElementById('notification').innerHTML = ''
     const radioButtons = document.querySelectorAll('input[type="radio"]')
